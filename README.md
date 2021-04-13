@@ -33,6 +33,7 @@
 >   * [ArrayQueueModule.java](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayQueueModule.java)
 >   * [ArrayQueueADT.java](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayQueueADT.java)
 >   * [ArrayQueue.java](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayQueue.java)  
+>   
 > Тесты:
 >   * [ArrayQueueModuleTest.java](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayQueueModuleTest.java)
 >   * [ArrayQueueADTTest.java](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayQueueADTTest.java)
