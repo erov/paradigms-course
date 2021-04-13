@@ -137,7 +137,7 @@
 Модификации
  * *Базовая*
     * Класс `GenericTabulator` должен реализовывать интерфейс
-      [Tabulator](java/expression/generic/Tabulator.java) и
+      [Tabulator](hw04-Generics/src/expression/generic/Tabulator.java) и
       сроить трехмерную таблицу значений заданного выражения.
         * `mode` – режим вычислений:
            * `i` – вычисления в `int` с проверкой на переполнение;
@@ -150,7 +150,7 @@
           значение выражения для `x = x1 + i`, `y = y1 + j`, `z = z1 + k`.
           Если значение не определено (например, по причине переполнения),
           то соответствующий элемент должен быть равен `null`.
-    * [Исходный код тестов]((hw04-Generics/src/expression/generic/GenericTest.java)
+    * [Исходный код тестов](hw04-Generics/src/expression/generic/GenericTest.java)
  * *AsmUpb* (38-39)
     * Дополнительно реализовать унарные операции:
         * `abs` – модуль числа, `abs -5` равно 5;
@@ -161,5 +161,5 @@
         * `u` – вычисления в `int` без проверки на переполнение;
         * `p` – вычисления в целых числах по модулю 1009;
         * `b` – вычисления в `byte` без проверки на переполнение.
-    * [Исходный код тестов]((hw04-Generics/src/expression/generic/GenericAsmUpbTest.java)
+    * [Исходный код тестов](hw04-Generics/src/expression/generic/GenericAsmUpbTest.java)
 
