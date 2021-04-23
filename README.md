@@ -214,7 +214,7 @@
         * `^` (`ceil`) – округление вверх `2.7 ^` равно 3.
     * [Исходный код тестов](javascript/jstest/functional/FunctionalOneFPTest.java)
 
-Запуск тестов
+Запуск тестов:
  * Для запуска тестов используется [GraalJS](https://github.com/graalvm/graaljs)
    (часть проекта [GraalVM](https://www.graalvm.org/), вам не требуется их скачивать отдельно)
  * Для запуска тестов можно использовать скрипты [TestJS.cmd](javascript/TestJS.cmd) и [TestJS.sh](javascript/TestJS.sh)
