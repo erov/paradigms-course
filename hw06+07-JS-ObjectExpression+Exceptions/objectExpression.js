@@ -332,11 +332,8 @@ const parseExpression = (source, mode) => {
     if (source.isStartOfExpression()) {
         source.next();
         const [operation, args] = getExpression(mode, source);
-        if (args.length !== operation.arity && isFinite(operation.arity)) {
+        if (isFinite(operation.arity) && args.length !== operation.arity) {
             throw new ArityMismatchError(source.getPosition(), operation.prototype.operator, operation.arity, args.length);
-        }
-        if (source.isEOF()) {
-            throw new MissingBracketError(source.getPosition(), false);
         }
         if (!source.isEndOfExpression()) {
             throw new InvalidItemError(source.getPosition(), false, source.get());
