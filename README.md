@@ -254,15 +254,15 @@
 2. _Сложный вариант_.
    * Метод `diff("x")` должен возвращать выражение, представляющее производную исходного выражения по переменной x. Например, `expr.diff("x")` должен возвращать выражение, эквивалентное `new Const(2)`, выражения `new Subtract(new Const(2), new Const(0))` и
 
-   ```
-   new Subtract(
-       new Add(
-           new Multiply(new Const(0), new Variable("x")),
-           new Multiply(new Const(2), new Const(1))
-       )
-       new Const(0)
-   )
-   ```
+      ```
+      new Subtract(
+          new Add(
+              new Multiply(new Const(0), new Variable("x")),
+              new Multiply(new Const(2), new Const(1))
+          )
+          new Const(0)
+      )
+      ```
                  
       так же будут считаться правильным ответом).
    * Функция parse должна выдавать разобранное объектное выражение.
