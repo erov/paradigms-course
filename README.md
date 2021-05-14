@@ -165,7 +165,7 @@
 
 ## Домашнее задание 5. Функциональные выражения на JavaScript
 
-> Реализация: [functionalExpression.js](/hw05-JS-FunctionalExpression/functionalExpression.js)
+> Реализация: [functionalExpression.js](/hw05-JS-FunctionalExpression/src/functionalExpression.js)
 
 1. Разработайте функции `cnst`, `variable`, `add`, `subtract`, `multiply`, `divide`, `negate` для вычисления выражений с одной переменной.  
 2. Функции должны позволять производить вычисления вида:
@@ -231,7 +231,7 @@
 
 ## Домашнее задание 6. Объектные выражения на JavaScript
 
-> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/objectExpression.js)
+> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/src/objectExpression.js)
 
 1. Разработайте классы `Const`, `Variable`, `Add`, `Subtract`, `Multiply`, `Divide`, `Negate` для представления выражений с одной переменной.
    * Пример описания выражения 2x-3:
