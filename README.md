@@ -2,7 +2,7 @@
 Мои решения домашних работ курса ["Парадигмы программирования"](http://www.kgeorgiy.info//courses/paradigms/index.html)  
 В заданиях реализованы модификации с отметкой 38-39, а также сложные версии там, где есть разделение.  
 
-## Домашнее задание 1. Бинарный поиск
+## Домашнее задание 1. Бинарный поиск 
 
 > Реализация: [BinarySearchMax.java](/hw01-BinarySearch/src/search/BinarySearchMax.java)
 
@@ -18,14 +18,34 @@
 Модификации:
  * *Базовая*
     * Класс `BinarySearch` должен находиться в пакете `search`
-    * [Исходный код тестов](/hw01-BinarySearch/src/search/BinarySearchTest.java)
+    * [Исходный код тестов](java/search/BinarySearchTest.java)
+    * [Откомпилированные тесты](artifacts/search/BinarySearchTest.jar)
  * *Max* (38-39)
     * На вход подается массив полученный приписыванием 
       отсортированного (строго) по убыванию массива 
       в конец массива отсортированного (строго) по возрастанию
       Требуется найти в нем максимальное значение.
     * Класс должен иметь имя `BinarySearchMax`
-    * [Исходный код тестов](/hw01-BinarySearch/src/search/BinarySearchMaxTest.java)
+    * [Исходный код тестов](java/search/BinarySearchMaxTest.java)
+    * [Откомпилированные тесты](artifacts/search/BinarySearchMaxTest.jar)
+
+Для того, чтобы протестировать базовую модификацию домашнего задания:
+
+ 1. Скачайте тесты ([BinarySearchTest.jar](artifacts/search/BinarySearchTest.jar))
+ 1. Откомпилируйте `BinarySearch.java`
+ 1. Проверьте, что создался `BinarySearch.class`
+ 1. В каталоге, в котором находится `search/BinarySearch.class` выполните команду
+
+    ```
+       java -jar <путь к BinarySearchTest.jar>
+    ```
+
+    Например, если `BinarySearchTest.jar` находится в текущем каталоге, 
+    а `BinarySearch.class` в каталоге `search`, выполните команду
+
+    ```
+        java -jar BinarySearchTest.jar
+    ```
 
 ## Домашнее задание 2. Очередь на массиве
 
@@ -58,13 +78,15 @@
 Модификации:
  * *Базовая*
     * Классы должны находиться в пакете `queue`
-    * [Исходный код тестов](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayQueueTest.java)
+    * [Исходный код тестов](java/queue/ArrayQueueTest.java)
+    * [Откомпилированные тесты](artifacts/queue/ArrayQueueTest.jar)
  * *Deque* (36-37)
     * Реализовать методы
         * `push` – добавить элемент в начало очереди
         * `peek` – вернуть последний элемент в очереди
         * `remove` – вернуть и удалить последний элемент из очереди
-    * [Исходный код тестов](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayDequeTest.java)
+    * [Исходный код тестов](java/queue/ArrayDequeTest.java)
+    * [Откомпилированные тесты](artifacts/queue/ArrayDequeTest.jar)
  * *DequeToStrArray* (38-39)
     * Реализовать модификацию *Deque*
     * Реализовать метод `toArray`, возвращающий массив,
@@ -72,7 +94,8 @@
       от головы к хвосту.
     * Реализовать метод `toStr`, возвращающий строковое представление
       очереди в виде '`[`' _голова_ '`, `' ... '`, `' _хвост_ '`]`'
-    * [Исходный код тестов](hw02%2B03-ArrayQueue%2BQueue/src/queue/ArrayDequeToStrArrayTest.java)
+    * [Исходный код тестов](java/queue/ArrayDequeToStrArrayTest.java)
+    * [Откомпилированные тесты](artifacts/queue/ArrayDequeToStrArrayTest.jar)
 
 ## Домашнее задание 3. Очереди
 
@@ -85,7 +108,8 @@
 
 Модификации:
  * *Базовая*
-    * [Исходный код тестов](hw02%2B03-ArrayQueue%2BQueue/src/queue/QueueTest.java)
+    * [Исходный код тестов](java/queue/QueueTest.java)
+    * [Откомпилированные тесты](artifacts/queue/QueueTest.jar)
  * *Nth* (38-39)
     * Добавить в интерфейс очереди и реализовать методы
         * `getNth(n)` – создать очередь, содержащую каждый n-й элемент, считая с 1
@@ -93,7 +117,8 @@
         * `dropNth(n)` – удалить каждый n-й элемент из исходной очереди
     * Тип возвращаемой очереди должен соответствовать типу исходной очереди
     * Дублирования кода быть не должно
-    * [Исходный код тестов](hw02%2B03-ArrayQueue%2BQueue/src/queue/QueueNthTest.java)
+    * [Исходный код тестов](java/queue/QueueNthTest.java)
+    * [Откомпилированные тесты](artifacts/queue/QueueNthTest.jar)
 
 ## Домашнее задание 4. Вычисление в различных типах
 
@@ -134,10 +159,11 @@
 4. Реализация не должна использовать аннотацию [@SuppressWarnings](https://docs.oracle.com/javase/specs/jls/se11/html/jls-9.html#jls-9.6.4.5).  
 5. При выполнении задания следует обратить внимание на простоту добавления новых типов и операциий.  
 
-Модификации
+
+Модификации:
  * *Базовая*
     * Класс `GenericTabulator` должен реализовывать интерфейс
-      [Tabulator](hw04-Generics/src/expression/generic/Tabulator.java) и
+      [Tabulator](java/expression/generic/Tabulator.java) и
       сроить трехмерную таблицу значений заданного выражения.
         * `mode` – режим вычислений:
            * `i` – вычисления в `int` с проверкой на переполнение;
@@ -150,7 +176,7 @@
           значение выражения для `x = x1 + i`, `y = y1 + j`, `z = z1 + k`.
           Если значение не определено (например, по причине переполнения),
           то соответствующий элемент должен быть равен `null`.
-    * [Исходный код тестов](hw04-Generics/src/expression/generic/GenericTest.java)
+    * [Исходный код тестов](java/expression/generic/GenericTest.java)
  * *AsmUpb* (38-39)
     * Дополнительно реализовать унарные операции:
         * `abs` – модуль числа, `abs -5` равно 5;
@@ -161,7 +187,7 @@
         * `u` – вычисления в `int` без проверки на переполнение;
         * `p` – вычисления в целых числах по модулю 1009;
         * `b` – вычисления в `byte` без проверки на переполнение.
-    * [Исходный код тестов](hw04-Generics/src/expression/generic/GenericAsmUpbTest.java)
+    * [Исходный код тестов](java/expression/generic/GenericAsmUpbTest.java)
 
 ## Домашнее задание 5. Функциональные выражения на JavaScript
 
@@ -194,14 +220,39 @@
    * Применение функций высшего порядка.
    * Выделение общего кода для операций.
 
-Модификации:
+ * *Base*
+    * Код должен находиться в файле `javascript-solutions/objectExpression.js`.
+    * [Исходный код тестов](javascript/jstest/object/ObjectTest.java)
+        * Запускать c указанием модификации и сложности (`easy`, `hard` или `bonus`).
+ * *ArcTan* (32, 33). Дополнительно реализовать поддержку:
+    * функций:
+        * `ArcTan` (`atan`) – арктангенс, `1256 atan` примерно равно 1.57;
+        * `ArcTan2` (`atan2`) – арктангенс, `841 540 atan2` примерно равно 1;
+ * *AvgMed* (34, 35). Дополнительно реализовать поддержку:
+    * функций:
+        * `Avg5` (`avg5`) – арифметическое среднее пяти аргументов, `1 2 3 4 5 avg5` равно 3;
+        * `Med3` (`med3`) – медиана трех аргументов, `1 2 -10 med3` равно 1.
+ * *Cube* (36, 37). Дополнительно реализовать поддержку:
+    * унарных функций:
+        * `Cube` (`cube`) – возведение в куб, `3 cube` равно 27;
+        * `Cbrt` (`cbrt`) – извлечение кубического корня, `-27 cbrt` равно −3;
+ * *Harmonic* (38, 39). Дополнительно реализовать поддержку:
+    * функций от двух аргументов:
+        * `Hypot` (`hypot`) – квадрат гипотенузы, `3 4 hypot` равно 25;
+        * `HMean` (`hmean`) – гармоническое среднее, `5 20 hmean` равно 8;
+
+
+## Домашнее задание 5. Функциональные выражения на JavaScript
+
+Модификации
  * *Базовая*
-    * [Исходный код тестов](javascript/jstest/functional/FunctionalExpressionTest.java)
+    * Код должен находиться в файле `javascript-solutions/functionalExpression.js`.
+    * [Исходный код тестов](javascript/jstest/functional/ExpressionTest.java)
         * Запускать c аргументом `hard` или `easy`;
  * *Mini* (для тестирования)
     * Не поддерживаются бинарные операции
-    * Код находится в файле [functionalMiniExpression.js](/hw05-JS-FunctionalExpression/functionalMiniExpression.js).
-    * [Исходный код тестов](javascript/jstest/functional/FunctionalMiniTest.java)
+    * Код находится в файле [functionalMiniExpression.js](javascript/MiniExpression.js).
+    * [Исходный код тестов](javascript/jstest/functional/MiniTest.java)
         * Запускать c аргументом `hard` или `easy`;
  * *OneFP* (38, 39). Дополнительно реализовать поддержку:
     * переменных: `y`, `z`;
@@ -212,9 +263,9 @@
         * `*+` (`madd`) – тернарный оператор произведение-сумма, `2 3 4 *+` равно 10;
         * `_` (`floor`) – округление вниз `2.7 _` равно 2;
         * `^` (`ceil`) – округление вверх `2.7 ^` равно 3.
-    * [Исходный код тестов](javascript/jstest/functional/FunctionalOneFPTest.java)
+    * [Исходный код тестов](javascript/jstest/functional/FunctionalTest.java)
 
-Запуск тестов:
+Запуск тестов
  * Для запуска тестов используется [GraalJS](https://github.com/graalvm/graaljs)
    (часть проекта [GraalVM](https://www.graalvm.org/), вам не требуется их скачивать отдельно)
  * Для запуска тестов можно использовать скрипты [TestJS.cmd](javascript/TestJS.cmd) и [TestJS.sh](javascript/TestJS.sh)
@@ -295,14 +346,15 @@
    * Обработку ошибок.
 
 Модификации:
- * *Базовая*
-    * [Исходный код тестов](javascript/jstest/prefix/PrefixParserTest.java)
-        * Запускать c аргументом `easy` или `hard`
- * *PostfixMeans* (38-39). Дополнительно реализовать поддержку:
+ * *Base*
+    * Код должен находиться в файле `javascript-solutions/objectExpression.js`.
+    * [Исходный код тестов](javascript/jstest/prefix/ParserTest.java)
+        * Запускать c указанием модификации и сложности (`easy` или `hard`).
+ * *Postfix*: *Means* (38-39). Дополнительно реализовать поддержку:
     * выражений в постфиксной записи: `(2 3 +)` равно 5
     * операций произвольного числа аргументов:
         * `ArithMean` (`arith-mean`) – арифметическое среднее `(arith-mean 1 2 6)` равно 3;
         * `GeomMean` (`geom-mean`) – геометрическое среднее `(geom-mean 1 2 4)` равно 2;
         * `HarmMean` (`harm-mean`) – гармоническое среднее, `(harm-mean 2 3 6)` равно 3;
-    * [Исходный код тестов](javascript/jstest/prefix/PostfixMeansTest.java)
+    * [Исходный код тестов](javascript/jstest/prefix/PostfixTest.java)
 
