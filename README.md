@@ -195,21 +195,8 @@
    * Применение функций высшего порядка.
    * Выделение общего кода для операций.
 
- * *Base*
-    * Код должен находиться в файле `javascript-solutions/objectExpression.js`.
-    * [Исходный код тестов](javascript/jstest/object/ObjectTest.java)
-        * Запускать c указанием модификации и сложности (`easy`, `hard` или `bonus`).
- * *Harmonic* (38, 39). Дополнительно реализовать поддержку:
-    * функций от двух аргументов:
-        * `Hypot` (`hypot`) – квадрат гипотенузы, `3 4 hypot` равно 25;
-        * `HMean` (`hmean`) – гармоническое среднее, `5 20 hmean` равно 8;
-
-
-## Домашнее задание 5. Функциональные выражения на JavaScript
-
-Модификации
+Модификации:
  * *Базовая*
-    * Код должен находиться в файле `javascript-solutions/functionalExpression.js`.
     * [Исходный код тестов](javascript/jstest/functional/ExpressionTest.java)
         * Запускать c аргументом `hard` или `easy`;
  * *Mini* (для тестирования)
@@ -287,14 +274,13 @@
    * Минимизацию необходимой памяти.
 
 Модификации:
- * *Базовая*
-    * [Исходный код тестов](javascript/jstest/object/ObjectExpressionTest.java)
-        * Запускать c аргументом `easy`, `hard` или `bonus`.
+ * *Base*
+    * [Исходный код тестов](javascript/jstest/object/ObjectTest.java)
+        * Запускать c указанием модификации и сложности (`easy`, `hard` или `bonus`).
  * *Harmonic* (38, 39). Дополнительно реализовать поддержку:
     * функций от двух аргументов:
         * `Hypot` (`hypot`) – квадрат гипотенузы, `3 4 hypot` равно 25;
         * `HMean` (`hmean`) – гармоническое среднее, `5 20 hmean` равно 8;
-    * [Исходный код тестов](javascript/jstest/object/ObjectHarmonicTest.java)
 
 ## Домашнее задание 7. Обработка ошибок на JavaScript
 
@@ -310,7 +296,6 @@
 
 Модификации:
  * *Base*
-    * Код должен находиться в файле `javascript-solutions/objectExpression.js`.
     * [Исходный код тестов](javascript/jstest/prefix/ParserTest.java)
         * Запускать c указанием модификации и сложности (`easy` или `hard`).
  * *Postfix*: *Means* (38-39). Дополнительно реализовать поддержку:
