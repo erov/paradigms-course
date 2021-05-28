@@ -199,11 +199,6 @@
  * *Базовая*
     * [Исходный код тестов](javascript/jstest/functional/ExpressionTest.java)
         * Запускать c аргументом `hard` или `easy`;
- * *Mini* (для тестирования)
-    * Не поддерживаются бинарные операции
-    * Код находится в файле [functionalMiniExpression.js](javascript/MiniExpression.js).
-    * [Исходный код тестов](javascript/jstest/functional/MiniTest.java)
-        * Запускать c аргументом `hard` или `easy`;
  * *OneFP* (38, 39). Дополнительно реализовать поддержку:
     * переменных: `y`, `z`;
     * констант:
