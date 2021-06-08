@@ -495,7 +495,7 @@
 
 ## Домашнее задание 12. Простые числа на Prolog
 
-> Реализация: [primes.pl](/blob/main/hw12-Prolog-PrimeNumbers/src/primes.pl)
+> Реализация: [primes.pl](/hw12-Prolog-PrimeNumbers/src/primes.pl)
 
 1. Разработайте правила:  
    * `prime(N)`, проверяющее, что N – простое число.
