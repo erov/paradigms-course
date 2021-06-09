@@ -227,7 +227,7 @@
 
 ## Домашнее задание 6. Объектные выражения на JavaScript
 
-> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/objectExpression.js)
+> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/src/objectExpression.js)
 
 1. Разработайте классы `Const`, `Variable`, `Add`, `Subtract`, `Multiply`, `Divide`, `Negate` для представления выражений с одной переменной.
    * Пример описания выражения 2x-3:
@@ -279,7 +279,7 @@
 
 ## Домашнее задание 7. Обработка ошибок на JavaScript
 
-> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/objectExpression.js)
+> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/src/objectExpression.js)
 
 1. Добавьте в предыдущее домашнее задание функцию `parsePrefix(string)`, разбирающую выражения, задаваемые записью вида «(- (* 2 x) 3)». Если разбираемое выражение некорректно, метод parsePrefix должен бросать человеко-читаемое сообщение об ошибке.  
 2. Добавьте в предыдущее домашнее задание метод `prefix()`, выдающий выражение в формате, ожидаемом функцией parsePrefix.  
