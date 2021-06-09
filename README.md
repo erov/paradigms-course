@@ -227,7 +227,7 @@
 
 ## Домашнее задание 6. Объектные выражения на JavaScript
 
-> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/src/objectExpression.js)
+> Реализация: [objectExpression.js](/hw06%2B07-JS-ObjectExpression%2BExceptions/objectExpression.js)
 
 1. Разработайте классы `Const`, `Variable`, `Add`, `Subtract`, `Multiply`, `Divide`, `Negate` для представления выражений с одной переменной.
    * Пример описания выражения 2x-3:
